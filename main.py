@@ -44,4 +44,85 @@ print(enc_utf8, enc_utf8, enc_utf16)
 result = enc_utf16.decode('utf16')
 print("result bytes converted to str:", result)
 
+# list
+int_list = [1, 2, 3]
+mixed_list = [1, 1.2, 'string']
+print(len(mixed_list))
+names1 = ['Jonhdd', "dsdsd", "Asd"]
+names2 = ['Tracy', 'Ekskdasd']
+print(names1 + names2)
+names1.append('Черноголовка')
+names1.sort()
+print(names1)
+names1.sort(key=len)
+print(names1)
+names1.sort(reverse=True)
+print(names1)
 
+
+# dict
+players = {'First': 1, "Second": 2, "Third": 3, "Четвертый": 4}
+print(type(players))
+players_another = dict(Первый=1, ВТорой=2, Третий=3, Четвертый=4)
+print(type(players_another))
+print(players.get('Second'))
+players['So'] = 5     # добавляем в словарь пару ключ значение
+print(f"Это словарь: {players}")
+players["So"] = 6
+del players["So"]
+print(type(players.keys()))
+print(players.keys())
+keys_as_list = list(players.keys())
+print(sorted(players.keys()))
+print('First' in players)
+print('Первый' not in players )
+dic_values = players.values()
+print(dic_values)
+for k, v in players.items():
+    print(k, v)
+print(players.items())
+players.pop('First')
+print(players.items())
+players.setdefault("Десятый")
+print(players.items())
+
+
+# tuple
+strings = ('das1', 'dsass2', 'dssa3')
+print(strings[-1])
+print(type(strings))
+
+# named tuple
+new_players = [('warlsen', 1990, 2843), ('tuborg', 190, 43), ('çan', 1994, 28223)]
+print(new_players[0])
+from collections import namedtuple
+Player = namedtuple('Player', 'name age rating')
+nnew_players = [Player('dsds32', 12323, 1321), Player('dsds31', 1323, 121), Player('dsds33', 1243, 11)]
+print(nnew_players[0].name)
+p1 = nnew_players[0]
+print(p1.name)
+print(p1.age)
+print(p1.rating)
+
+
+# if else
+if True:
+    print('índeed, true.')
+if 3 >2:
+    print('3 is greater than 2')
+is_admin = True
+if is_admin:
+    print("It's admin, look at him")
+
+selected_character = input()
+if selected_character == 'Protos':
+    print("Protos win")
+elif selected_character == "Zerg":
+    print("Protos failed. Zerg win.")
+elif selected_character == "Terrain":
+    print("Terrain is chosen")
+else:
+    print('It seems we have a new race')
+
+
+# for

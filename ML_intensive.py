@@ -5,7 +5,7 @@ pandas.read_excel("trips_data.xlsx")
 trips_data = pandas.read_excel("trips_data.xlsx")
 # print(trips_data.shape)
 # print(trips_data.tail(3))
-trips_data.salary.hist(bins=100)  # Гистограмма зарплат
+trips_data.salary.hist(bins=100)# Гистограмма зарплат
 # trips_data.age.hist()
 # print(trips_data.city.value_counts())
 # print(trips_data.vacation_preference.value_counts())
