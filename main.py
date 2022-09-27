@@ -114,6 +114,7 @@ is_admin = True
 if is_admin:
     print("It's admin, look at him")
 
+
 selected_character = input()
 if selected_character == 'Protos':
     print("Protos win")
@@ -123,6 +124,23 @@ elif selected_character == "Terrain":
     print("Terrain is chosen")
 else:
     print('It seems we have a new race')
+
+
+# set
+my_set = set()
+print(type(my_set))
+my_set.add(1)
+my_set.add(2)
+print(my_set)
+my_set.add(2)
+print(my_set)
+
+my_list = [1,1,1,1,2,2,2,4,4,4]
+s = set(my_list)
+print(s)
+len(s)
+print(1 in s)
+print(5 in s)
 
 
 # for
