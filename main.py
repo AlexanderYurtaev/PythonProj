@@ -1,6 +1,16 @@
 import os
 import sys
 
+
+a = 2 #не ограничен в памяти
+a_float = 1.3 #не ограничен в памяти
+a_str = 'hi'
+a_list = [1, 2.0, "hi"]
+a_dict = {"john": "+32323232", "john" : "+23456212"}
+a_tuple = (1, 2.0, "hello")
+a_set = {"a", "b"}
+a_bool = False
+
 print("My name is {}".format("Elias"))
 my_name = "John"
 print("My name is {}".format(my_name))
